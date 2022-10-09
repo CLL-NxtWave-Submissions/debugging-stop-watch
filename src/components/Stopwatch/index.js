@@ -2,6 +2,8 @@ import {Component} from 'react'
 
 import './index.css'
 
+let timeInterval = null
+
 class Stopwatch extends Component {
   state = {
     isTimerRunning: false,
