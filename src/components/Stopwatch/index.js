@@ -11,7 +11,7 @@ class Stopwatch extends Component {
   }
 
   componentWillunmount() {
-    clearTimeout(this.timeInterval)
+    clearTimeout(timeInterval)
   }
 
   onResetTimer = () => {
