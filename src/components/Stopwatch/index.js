@@ -10,7 +10,7 @@ class Stopwatch extends Component {
     timeElapsedInSeconds: 0,
   }
 
-  componentWillunmount() {
+  componentWillUnmount() {
     clearTimeout(timeInterval)
   }
 
@@ -20,7 +20,7 @@ class Stopwatch extends Component {
   }
 
   onStopTimer = () => {
-    clearInterval(this.timeInterval)
+    clearInterval(timeInterval)
     this.setState({isTimerRunning: false})
   }
 
