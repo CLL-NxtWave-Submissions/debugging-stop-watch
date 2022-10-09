@@ -16,7 +16,10 @@ class Stopwatch extends Component {
 
   onResetTimer = () => {
     clearInterval(timeInterval)
-    this.setState({isTimerRunning: false})
+    this.setState({
+      isTimerRunning: false,
+      timeElapsedInSeconds: 0,
+    })
   }
 
   onStopTimer = () => {
