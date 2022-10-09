@@ -31,7 +31,7 @@ class Stopwatch extends Component {
   }
 
   onStartTimer = () => {
-    timeInterval = setTimeout(updateTime, 1000)
+    timeInterval = setTimeout(this.updateTime, 1000)
     this.setState({isTimerRunning: true})
   }
 
