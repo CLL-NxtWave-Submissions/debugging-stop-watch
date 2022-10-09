@@ -56,7 +56,7 @@ class Stopwatch extends Component {
   render() {
     const {isTimerRunning} = this.state
     const time = `${renderMinutes()}:${renderSeconds()}`
-    
+
     return (
       <div className="app-container">
         <div className="stopwatch-container">
@@ -102,4 +102,4 @@ class Stopwatch extends Component {
   }
 }
 
-default export Stopwatch
+export default Stopwatch
